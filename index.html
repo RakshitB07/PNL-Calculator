@@ -15,13 +15,16 @@
     </header>
     <main>
         <label for="initial-price">Initial Price
-            <input type="text" id="initial-price" placeholder="Enter..." />
+            <input type="number" id="initial-price" placeholder="Enter..." min=0
+                oninput="validity.valid||(value='');" />
         </label>
         <label for="stocks-quantity">Quantity of Stocks
-            <input type="text" id="stocks-quantity" placeholder="Enter..." />
+            <input type="number" id="stocks-quantity" placeholder="Enter..." min=0
+                oninput="validity.valid||(value='');" />
         </label>
         <label for="current-price">Current Price
-            <input type="text" id="current-price" placeholder="Enter..." />
+            <input type="number" id="current-price" placeholder="Enter..." min=0
+                oninput="validity.valid||(value='');" />
         </label>
 
         <button id="submit-btn">Check</button>
